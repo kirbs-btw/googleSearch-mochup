@@ -1,7 +1,9 @@
 :root{
     --bgColor: #171721;
     --secColor: #2F2F33;
+    --brightSecColor: #575759;
     --navSectionHeight: 10vh;
+    --accentBlue: #2E55AA;
 }
 
 body{
@@ -52,6 +54,10 @@ input{
   border: none;
 }
 
+input:focus{
+  background-color: white;
+}
+
 button{
   border: none;
   background-color: var(--secColor);
@@ -88,4 +94,22 @@ button{
   width: 80%;
   height: 100%;
   /* background-color: green; */
+}
+
+/*
+content section styling
+*/
+
+.content-section > a, .content-section > p{
+  font-family: Futura Bk BT;
+}
+
+.content-section > a{
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--accentBlue);
+}
+
+.content-section > p{
+  color: var(--brightSecColor);
 }
