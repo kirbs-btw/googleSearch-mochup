@@ -49,9 +49,11 @@ form{
 }
 
 input{
-  width: 28vw;
+  box-sizing: border-box;
+  width: 25vw;
   background-color: var(--secColor);
   border: none;
+  height: calc(var(--navSectionHeight)*0.5);
 }
 
 input:focus{
@@ -100,7 +102,7 @@ button{
 content section styling
 */
 
-.content-section > a, .content-section > p{
+.content-section > *{
   font-family: Futura Bk BT;
 }
 
@@ -112,4 +114,20 @@ content section styling
 
 .content-section > p{
   color: var(--brightSecColor);
+}
+
+.right-info-section{
+  margin-left: 5%;
+  margin-top: 1vh;
+  box-sizing: border-box;
+  background-color: var(--brightSecColor);
+  border-radius: 2vh;
+  width: 45%;
+  height: auto;
+  padding: 1vh;
+}
+
+.right-info-section > *{
+  font-family: Futura Bk BT;
+  color: white;
 }
