@@ -1,9 +1,10 @@
 :root{
-    --bgColor: #171721;
-    --secColor: #2F2F33;
+    --bgColor: #242629;
+    --secColor: #333437;
     --brightSecColor: #575759;
+    --textColor: #cccccc;
     --navSectionHeight: 10vh;
-    --accentBlue: #2E55AA;
+    --accentBlue: #A6A9DA;
 }
 
 body{
@@ -19,7 +20,7 @@ body{
   width: 100vw;
   height: var(--navSectionHeight);
   box-sizing: border-box;
-  border-bottom: white 1px solid;
+  border-bottom: var(--brightSecColor) 1px solid;
   display: flex;
   align-items: center;
 }
@@ -70,7 +71,7 @@ button{
   padding-left: 2vh;
   border: none;
   background-color: var(--secColor);
-  color: white;
+  color: var(--textColor);
 }
 
 button:hover{
@@ -124,14 +125,14 @@ content section styling
 }
 
 .content-section > p{
-  color: var(--brightSecColor);
+  color: var(--textColor);
 }
 
 .right-info-section{
   margin-left: 5%;
   margin-top: 1vh;
   box-sizing: border-box;
-  background-color: var(--brightSecColor);
+  border: solid 1px var(--brightSecColor);
   border-radius: 2vh;
   width: 45%;
   height: auto;
@@ -140,5 +141,5 @@ content section styling
 
 .right-info-section > *{
   font-family: Futura Bk BT;
-  color: white;
+  color: var(--textColor);
 }
